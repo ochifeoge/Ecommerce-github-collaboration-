@@ -53,6 +53,7 @@ h2 {
   color: var(--lightGray);
   border: 0;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .btn.active {
   color: var(--white);
@@ -61,6 +62,45 @@ h2 {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+}
+
+.card {
+  padding: 0.6rem;
+  width: 190px;
+  background-color: var(--white);
+}
+.card-head {
+  width: 170px;
+  height: 226px;
+}
+.card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card,
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.review i {
+  color: var(--normalBlack);
+}
+.review small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--lighterGray);
+}
+.discription {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--lightGray);
+}
+.price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--lighterGray);
 }
 
 /* ================NAVIGATION GOES HERE👇👇(please remove or adjust the margin in the hero section. thanks) ============================ */
@@ -165,42 +205,222 @@ h2 {
   align-items: center;
   gap: 0.9rem;
 }
-.card {
-  padding: 0.6rem;
+
+/* ================deals-sales SECTION  ============================ */
+
+#deals-sales {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 281px 1fr;
+  margin: 2rem 0;
+}
+.deals,
+.sales {
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.375rem;
+  align-items: center;
+}
+.title h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--normalBlack);
+}
+.title h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: var(--normalBlack);
+}
+
+.d-button {
+  display: flex;
+  align-items: center;
+}
+.d-button .active {
+  padding: 0.625rem;
+  border-radius: 4px;
+  background-color: #888888;
+}
+#deals-btn {
+  width: 191px;
+  height: 56px;
+  padding: 10px;
+  gap: 15px;
+  border-radius: 4px;
+  background-color: var(--accentColor);
+  align-items: center;
+  justify-content: center;
+}
+.deals img {
+  width: 250px;
+  height: 448px;
+  object-fit: cover;
+}
+.sales-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.left button {
+  color: var(--normalBlack);
+  font-weight: 700;
+}
+
+.sales-title {
+  display: flex;
+  align-items: center;
+  gap: 0.76rem;
+}
+.sales-title h4 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0%;
+}
+.sales h5 {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.timer {
+  width: 186px;
+  height: 36px;
+  padding: 6px 12px;
+  background-color: var(--normalBlack);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.sales-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sales-body .card {
+  flex-basis: 25%;
+}
+
+.sales-body .card-head {
+  width: 202px;
+  height: 172px;
+  position: relative;
+}
+.sales-body .card-body {
+  width: 202px;
+}
+.sales-body .tag {
+  position: absolute;
+  font-size: 0.8rem;
+  padding: 8px 12px;
+  top: -3px;
+  left: -3px;
+  color: var(--white);
+  background-color: var(--redAccent);
+  text-transform: uppercase;
+}
+.sales-body .tag.blue {
+  background: #2da5f3;
+}
+.sales-body .tag.green {
+  background: #2db224;
+}
+.sales-body .tag.black {
+  background-color: var(--normalBlack);
+}
+
+.sales-body .tag.yellow {
+  background: #ffa630;
+}
+
+/* BANNER SECTION */
+#banner-section h2 {
+  text-align: start;
+  margin-bottom: 1.2rem;
+}
+#banner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.bannerBox1 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  background: url(./assets/green-cloth-babe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 650px;
+  height: 621px;
+  padding: 20px 30px;
+}
+.box1-head {
+  align-self: flex-start;
+}
+.box1-head h2 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+.bannerBox1 .card {
   width: 190px;
+  height: 375px;
+  padding: 10px;
 }
-.card-head {
+.bannerBox1 .card-body {
   width: 170px;
-  height: 226px;
+  height: 233px;
+  gap: 2px;
 }
-.card-head img {
+
+.banner-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bannerBox2 {
+  display: grid;
+  grid-template-columns: repeat(2, 314px);
+  grid-template-rows: repeat(4, 194px);
+  height: 621px;
+  flex-basis: 48%;
+  gap: 0.9rem;
+}
+.bannerBox2 .box {
+  position: relative;
+}
+.bannerBox2 .box h5 {
+  position: absolute;
+  top: 21px;
+  left: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2%;
+  z-index: 2;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.bannerBox2 .overlay {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+}
+.bannerBox2 .box img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card,
-.card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.review i {
-  color: var(--normalBlack);
-}
-.review small {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--lighterGray);
-}
-.discription {
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: var(--lightGray);
-}
-.price {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--lighterGray);
-}
-
-/* ================ABOUT SECTION  ============================ */
