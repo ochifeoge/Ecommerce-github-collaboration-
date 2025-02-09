@@ -16,7 +16,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #f4f4f4;
   color: var(--normalBlack);
   line-height: 1.6;
@@ -37,6 +36,31 @@ h1 {
   line-height: 40px;
   letter-spacing: 0%;
   text-align: center;
+}
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.btn {
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: var(--lightGray);
+  border: 0;
+  text-transform: capitalize;
+}
+.btn.active {
+  color: var(--white);
+  background-color: var(--accentColor);
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 /* ================NAVIGATION GOES HERE👇👇(please remove or adjust the margin in the hero section. thanks) ============================ */
@@ -93,27 +117,90 @@ h1 {
   cursor: pointer;
 }
 .buttons-selection {
-  margin-top: 2rem;
+  margin: 2rem 0;
   padding: 0 3.75rem;
   display: flex;
   align-items: center;
   gap: 3rem;
 }
-.btn {
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: center;
-  color: var(--lightGray);
-  border: 0;
-  text-transform: capitalize;
+
+/* ================SPECIAL SECTION  ============================ */
+
+#special {
+  height: 60vh;
+  background: url(./assets/Widgets.png);
+  background-size: cover;
+  margin-bottom: 3rem;
 }
-.btn.active {
-  color: var(--white);
-  background-color: var(--accentColor);
-  padding: 8px 20px;
+#featured-products {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  justify-content: space-between;
 }
+.wrapper {
+  padding: 1.2rem;
+  width: 429px;
+}
+.wrapper-head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.wrapper-head .btn {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 56px;
+  letter-spacing: 1.2%;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  text-transform: uppercase;
+  color: var(--accentColor);
+}
+.wrapper-body {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+.card {
+  padding: 0.6rem;
+  width: 190px;
+}
+.card-head {
+  width: 170px;
+  height: 226px;
+}
+.card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card,
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.review i {
+  color: var(--normalBlack);
+}
+.review small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--lighterGray);
+}
+.discription {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--lightGray);
+}
+.price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--lighterGray);
+}
+
 /* ================ABOUT SECTION  ============================ */
